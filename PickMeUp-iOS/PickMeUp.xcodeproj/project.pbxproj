@@ -29,8 +29,6 @@
 		27173654197D794700B9813C /* PMUMessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27173652197D794700B9813C /* PMUMessageTableView.m */; };
 		27173658197D795E00B9813C /* PickMeUpTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27173657197D795E00B9813C /* PickMeUpTests-Info.plist */; };
 		27173660197D7C3800B9813C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2717365F197D7C3800B9813C /* Main_iPhone.storyboard */; };
-		273F485C196C9FAC0036FAB8 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 273F485B196C9FAC0036FAB8 /* README */; };
-		273F4877197D749F0036FAB8 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 273F4876197D749F0036FAB8 /* License.txt */; };
 		27536B8A19805FD50073F317 /* bubbleMine.png in Resources */ = {isa = PBXBuildFile; fileRef = 27536B8619805FD50073F317 /* bubbleMine.png */; };
 		27536B8B19805FD50073F317 /* bubbleMine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27536B8719805FD50073F317 /* bubbleMine@2x.png */; };
 		27536B8C19805FD50073F317 /* bubbleSomeone.png in Resources */ = {isa = PBXBuildFile; fileRef = 27536B8819805FD50073F317 /* bubbleSomeone.png */; };
@@ -55,6 +53,8 @@
 		27B551AE194769B200D1B9FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B55187194769B200D1B9FA /* Foundation.framework */; };
 		27B551AF194769B200D1B9FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5518B194769B200D1B9FA /* UIKit.framework */; };
 		27B551CF19477E8E00D1B9FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B551CE19477E8E00D1B9FA /* MapKit.framework */; };
+		27F4751A19C76C0200E0CC3D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 27F4751819C76C0200E0CC3D /* LICENSE */; };
+		27F4751B19C76C0200E0CC3D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 27F4751919C76C0200E0CC3D /* README.md */; };
 		96C0304F1981ABC9003188F7 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C030471981ABC9003188F7 /* Icon-40.png */; };
 		96C030501981ABC9003188F7 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C030481981ABC9003188F7 /* Icon-40@2x.png */; };
 		96C030511981ABC9003188F7 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C030491981ABC9003188F7 /* Icon-60.png */; };
@@ -120,8 +120,6 @@
 		27173657197D795E00B9813C /* PickMeUpTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PickMeUpTests-Info.plist"; path = "PickMeUpTests/PickMeUpTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2717365A197D796A00B9813C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = PickMeUpTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		2717365F197D7C3800B9813C /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
-		273F485B196C9FAC0036FAB8 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		273F4876197D749F0036FAB8 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		27536B8619805FD50073F317 /* bubbleMine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleMine.png; sourceTree = "<group>"; };
 		27536B8719805FD50073F317 /* bubbleMine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleMine@2x.png"; sourceTree = "<group>"; };
 		27536B8819805FD50073F317 /* bubbleSomeone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSomeone.png; sourceTree = "<group>"; };
@@ -147,6 +145,8 @@
 		27B551AB194769B200D1B9FA /* PickMeUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickMeUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B551AC194769B200D1B9FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		27B551CE19477E8E00D1B9FA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		27F4751819C76C0200E0CC3D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		27F4751919C76C0200E0CC3D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		96C030471981ABC9003188F7 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		96C030481981ABC9003188F7 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		96C030491981ABC9003188F7 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
@@ -212,12 +212,12 @@
 		27B5517B194769B200D1B9FA = {
 			isa = PBXGroup;
 			children = (
+				27F4751819C76C0200E0CC3D /* LICENSE */,
+				27F4751919C76C0200E0CC3D /* README.md */,
 				27B55186194769B200D1B9FA /* Frameworks */,
 				27B5518D194769B200D1B9FA /* PickMeUp */,
 				27B551B2194769B200D1B9FA /* PickMeUpTests */,
 				27B55185194769B200D1B9FA /* Products */,
-				273F4876197D749F0036FAB8 /* License.txt */,
-				273F485B196C9FAC0036FAB8 /* README */,
 			);
 			sourceTree = "<group>";
 		};
@@ -455,17 +455,16 @@
 				96C030541981ABC9003188F7 /* Icon-76@2x.png in Resources */,
 				27536B9D19805FDE0073F317 /* ic_action_microphone.png in Resources */,
 				27536BA719805FDE0073F317 /* ic_user.png in Resources */,
-				273F485C196C9FAC0036FAB8 /* README in Resources */,
 				27536BA319805FDE0073F317 /* ic_action_user.png in Resources */,
 				96C030521981ABC9003188F7 /* Icon-60@2x.png in Resources */,
 				27536B9F19805FDE0073F317 /* ic_action_photo.png in Resources */,
 				27536B9B19805FDE0073F317 /* ic_action_map.png in Resources */,
 				96C030531981ABC9003188F7 /* Icon-76.png in Resources */,
-				273F4877197D749F0036FAB8 /* License.txt in Resources */,
 				27536BA619805FDE0073F317 /* ic_passenger.png in Resources */,
 				27536BA119805FDE0073F317 /* ic_action_selfie.png in Resources */,
 				27536B8B19805FD50073F317 /* bubbleMine@2x.png in Resources */,
 				96C030511981ABC9003188F7 /* Icon-60.png in Resources */,
+				27F4751A19C76C0200E0CC3D /* LICENSE in Resources */,
 				27536B8A19805FD50073F317 /* bubbleMine.png in Resources */,
 				27536B8C19805FD50073F317 /* bubbleSomeone.png in Resources */,
 				2717364A197D791500B9813C /* Secondary_iPhone.storyboard in Resources */,
@@ -494,6 +493,7 @@
 				27173633197D78E900B9813C /* PMUConstants.m in Sources */,
 				27173647197D791500B9813C /* PMUMapViewController.m in Sources */,
 				270434A81986E00100741DC3 /* PMUTopicFactory.m in Sources */,
+				27F4751B19C76C0200E0CC3D /* README.md in Sources */,
 				27173646197D791500B9813C /* PMUFinalizeViewController.m in Sources */,
 				27173615197D786300B9813C /* PMUAppDelegate.m in Sources */,
 				27173649197D791500B9813C /* PMURequestViewController.m in Sources */,
