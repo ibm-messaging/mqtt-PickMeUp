@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ibm.pickmeup.activities.TripEndDetailsActivity">
+
+    <TextView
+        style="@style/BigTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_details"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tripEndDetailsHeader" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tripEndDetailsHeader"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="25dp"
+        android:id="@+id/tripEndDetailsTable">
+
+        <TableRow>
+            <TextView
+                android:text="@string/distance"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/tripEndDistance"
+                android:gravity="right"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/time"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/tripEndTime"
+                android:gravity="right"
+                android:padding="5dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/cost"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/tripEndCost"
+                android:gravity="right"
+                android:padding="5dip" />
+        </TableRow>
+
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/tripEndSelfieFrameLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tripEndDetailsTable"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:contentDescription="@string/driver_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/driverTripEndPhoto"
+            android:src="@drawable/ic_user"
+            android:padding="6dp"/>
+
+        <ImageView
+            android:contentDescription="@string/driver_photo_wrapper"
+            android:src="@drawable/round"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/driverTripEndName"
+        android:layout_below="@+id/tripEndSelfieFrameLayout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverTripEndName"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="20dp"
+        android:id="@+id/tripEndDetailsRatingTipTable">
+
+        <TableRow
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/driver_rating"
+                android:padding="5dip" />
+            <Spinner
+                android:gravity="right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripEndRatingSpinner"
+                android:spinnerMode="dialog"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/add_tip"
+                android:padding="5dip"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/dollar_sign"
+                android:id="@+id/tripEndTipEntry"
+                android:background="#00000000"
+                android:padding="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        style="@style/BottomButton"
+        android:text="@string/submit_payment"
+        android:id="@+id/submitPaymentButton" />
+
+</RelativeLayout>

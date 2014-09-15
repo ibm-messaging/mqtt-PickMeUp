@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PickMeUp</string>
+    <string name="title_activity_map">Map</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Error messages -->
+    <string name="broker_unavailable_check_connectivity">Server is unavailable. Please check your connectivity and try again</string>
+    <string name="exit">Exit</string>
+    <string name="retry">Retry</string>
+    <string name="location_services_unavailable">PickMeUp requires Location services to work. Make sure you have enable Location services before continuing.</string>
+    <string name="location_services_map_unavailable">Cannot establish connection to the Location services. Map is not available.</string>
+
+    <!-- Login Screen -->
+
+    <string name="welcome_text">Hi, my name is</string>
+    <string name="name_passenger_placeholder">Name</string>
+    <string name="pick_me_up">Pick Me Up!</string>
+    <string name="name_not_specified">Please fill in your name to continue!</string>
+
+    <!-- Search Drivers Screen -->
+
+    <string name="searching_for_drivers">Searching for drivers..</string>
+
+    <!-- Driver Details Screen -->
+
+    <string name="driver_found">Driver found!</string>
+    <string name="continue_button">Continue</string>
+
+    <!-- Chat Prep Screen -->
+
+    <string name="snap_pic">Snap a picture of yourself!</string>
+    <string name="chat_label">Chat</string>
+
+    <!-- Driver Arrived Screen -->
+
+    <string name="ride_is_here">Your ride is here!</string>
+
+    <!-- Payment Sent Screen -->
+
+    <string name="payment_sent">Payment Sent!</string>
+    <string name="payment_sent_message">Your payment of %1$s%2$.2f was received. Thanks for riding with PickMeUp!</string>
+    <string name="processing_payment">Processing..</string>
+
+    <!-- Trip End Details Screen -->
+
+    <string name="trip_details">Trip Details</string>
+    <string name="distance">Distance</string>
+    <string name="time">Time</string>
+    <string name="cost">Cost</string>
+    <string name="driver_rating">Driver Rating</string>
+    <string name="add_tip">Add Tip?</string>
+    <string name="submit_payment">Submit Payment</string>
+    <string name="dollar_sign">$</string>
+
+    <!-- Map & Chat Screens -->
+
+    <string name="map_label">Map</string>
+    <string name="distance_calculating">Distance: calculating..</string>
+    <string name="distance_with_value">Distance: %.1f miles</string>
+    <string name="eta_with_value">ETA: %1$d:%2$d %3$s</string>
+    <string name="eta_calculating">ETA: calculating..</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="send_a_message">Send a message</string>
+    <string name="send_voice_message">Send recorded voice message</string>
+    <string name="send_button">Send button</string>
+    <string name="take_photo">Take photo</string>
+    <string name="take_photo_wrapper">Take photo (wrapper)</string>
+    <string name="driver_photo">Driver photo</string>
+    <string name="driver_photo_wrapper">Driver photo (wrapper)</string>
+    <string name="sender_photo">Chat message sender photo</string>
+    <string name="sender_photo_wrapper">Chat message sender photo (wrapper)</string>
+    <string name="home">Home</string>
+    <string name="stopped_recording">Stopped recording</string>
+    <string name="recording">Recording your voice message...</string>
+    <string name="voice_message_sent">Voice message sent</string>
+
+
+</resources>

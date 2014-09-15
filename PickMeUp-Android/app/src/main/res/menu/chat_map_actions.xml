@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_chat"
+        android:title="@string/chat_label"
+        android:icon="@drawable/ic_action_person"
+        android:showAsAction="ifRoom" />
+        <!--android:icon="@drawable/ic_action_user"/>-->
+    <item android:id="@+id/action_map"
+        android:title="@string/map_label"
+        android:icon="@drawable/ic_action_map"
+        android:showAsAction="ifRoom" />
+</menu>

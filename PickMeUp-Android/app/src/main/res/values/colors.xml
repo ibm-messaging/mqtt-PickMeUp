@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="actionbar_text">#ffffff</color>
+    <color name="background_main">#3A4A53</color>
+    <color name="background_actionbar">#22333F</color>
+    <color name="background_button">#0DBF99</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#A8A9AD</color>
+
+</resources>

@@ -1,0 +1,139 @@
+<!----------------------------------------------------------
+ * Copyright (c) 2014 IBM Corp.
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * and Eclipse Distribution License v1.0 which accompany this distribution.
+ *
+ * The Eclipse Public License is available at
+ *   http://www.eclipse.org/legal/epl-v10.html
+ * and the Eclipse Distribution License is available at
+ *   http://www.eclipse.org/org/documents/edl-v10.php.
+---------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PickMeUp - Driver</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body onload="init()">
+		<div class="header">
+			<span id="title">PickMeUp</span>
+			<span id="connectionStatus"></span>
+			&nbsp;
+		</div>
+		<div class="mask"></div>
+		<div class="page" style="opacity: 1; visibility: visible;" id="pageSignin">
+			<div id="pageSignin_middleContainer">
+				<h1 class="containerTitle">Welcome, Driver!</h1>
+				<div class="signinRow">
+					<div class="signinLabel">Name:</div>
+					<div class="signinValue"><input type="text" id="driverNameInput" value="Bryan"/></div>
+				</div>
+				<div class="signinRow">
+					<div class="signinLabel">Picture:</div>
+					<div class="signinValue"><input id="driverPictureInput" type="file" /></div>
+				</div>
+				<div class="imageContainer">
+					<img id="signinDriverImage" src="img/person.png">
+				</div>
+				<div><button id="driverLoginButton">Log In</button></div>
+			</div>
+		</div>
+		<div class="page" style="opacity: 0; visibility: hidden" id="pagePairing">
+			<div id="pagePairing_leftContainer" style="width: 300px">
+				<div class="leftContainerTitle">Requests</div>
+				<div id="requestList">
+				</div>
+			</div>
+			<div id="pagePairing_rightContainer" style="left: 301px">
+				<div class="mapContainer" id="map_pagePairing"></div>
+			</div>
+		</div>
+		<div class="page" style="opacity: 0; visibility: hidden" id="pageApproaching">
+			<div id="pageApproaching_leftContainer" style="width: 400px">
+				<div class="leftContainerTitle">Picking Up</div>
+				<div class="pickupPassengerContainer">
+					<div id="pickupPassengerLabel">Passenger:</div>
+					<div id="pickupPassengerName"></div>
+					<div class="imageContainer">
+						<img id="pickupPassengerImage">
+					</div>
+				</div>
+				<div class="chatContainer">
+					<div class="chatMessagesContainer">
+					</div>
+					<div class="chatInputContainer">
+						<form id="chatInputForm">
+							<input class="chatInputField" type="text" id="chatInputText" placeholder="Type message..."></input>
+							<button class="chatSendButton" type="submit" id="sendChatBtn">Send</button>
+						</form>
+					</div>
+				</div>
+				<div id="newAudioMessageContainer">
+					<div class="newAudioMessageDescription">New Voice Message!</div>
+					<button class="newAudioMessageBtn">Play</button>
+				</div>
+			</div>
+			<div id="pageApproaching_rightContainer" style="left: 401px">
+				<div class="mapContainer" id="map_pageApproaching"></div>
+				<div id="pickupDetailsContainer">
+					<div class="pickupDetailLabel">Distance</div>
+					<div id="pickupDistanceValue" class="pickupDetailValue">3.0 mi</div>
+					<div class="pickupDetailLabel">ETA</div>
+					<div id="pickupETAValue" class="pickupDetailValue">3:03 PM</div>
+				</div>
+			</div>
+		</div>
+		<div class="page" style="opacity: 0; visibility: hidden" id="pageRiding">
+			<div class="mapContainer" id="map_pageRiding"></div>
+			<div id="tripDetailsContainer">
+				<div class="tripDetailLabel">Distance</div>
+				<div id="tripDistanceValue" class="tripDetailValue">0.0 mi</div>
+				<div class="tripDetailLabel">Time</div>
+				<div id="tripTimeValue" class="tripDetailValue">0:00</div>
+				<div class="tripDetailLabel">Cost</div>
+				<div id="tripCostValue" class="tripDetailValue">$5.00</div>
+				<button id="tripStopButton">End Trip</button>
+			</div>
+			<div id="tripSummaryContainer">
+				<h1 class="containerTitle">Trip Summary</h1>
+				<div class="summaryDetailLabel">Distance</div>
+				<div id="tripSummaryDistanceValue" class="summaryDetailValue">0.0 mi</div>
+				<br>
+				<div class="summaryDetailLabel">Time</div>
+				<div id="tripSummaryTimeValue" class="summaryDetailValue">0:00</div>
+				<br>
+				<div class="summaryDetailLabel">Cost</div>
+				<div id="tripSummaryCostValue" class="summaryDetailValue">$5.00</div>
+				<div class="summaryDescription">Payment request in process...</div>
+			</div>
+			<div id="paymentSummaryContainer">
+				<h1 class="containerTitle">Payment Summary</h1>
+				<div class="summaryDetailLabel">Rating</div>
+				<div id="paymentRatingValue" class="summaryDetailValue">3 stars</div>
+				<br>
+				<div class="summaryDetailLabel">Tip</div>
+				<div id="paymentTipValue" class="summaryDetailValue">$5.00</div>
+				<br>
+				<div class="summaryDescription">Payment received!</div>
+				<button class="goHomeBtn">Home</button>
+			</div>
+		</div>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/utils/jquery.min.js"></script>
+		<script src="js/utils/mqttws31.js"></script>
+		<script src="js/utils/OpenLayers.js"></script>
+		<script src="js/Utils.js"></script>
+		<script src="js/App.js"></script>
+		<script src="js/Messenger.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+

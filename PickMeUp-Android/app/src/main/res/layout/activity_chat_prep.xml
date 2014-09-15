@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ibm.pickmeup.activities.ChatPrepActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/snap_pic"
+        android:id="@+id/chatPrepText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/selfieFrameLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:contentDescription="@string/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/selfieButton"
+            android:padding="6dp"
+            android:src="@drawable/ic_action_selfie"/>
+
+        <ImageView
+            android:contentDescription="@string/take_photo_wrapper"
+            android:src="@drawable/round"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/passengerName"
+        android:layout_below="@+id/selfieFrameLayout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/BottomButton"
+        android:visibility="gone"
+        android:text="@string/pick_me_up"
+        android:id="@+id/pickmeupButton" />
+</RelativeLayout>

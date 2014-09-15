@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibm.pickmeup" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <supports-screens
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+    <application
+        android:name=".PickMeUpApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/PickMeUpTheme"
+        android:icon="@drawable/ic_launcher">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBxaqyC_quL0dRACRD4VmStnJGkO6UWSso" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Mqtt Service -->
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <activity android:name=".activities.SearchDriversActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activities.DriverDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activities.ChatPrepActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activities.ChatActivity"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_launcher"
+            >
+        </activity>
+        <activity
+            android:name=".activities.MapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_launcher">
+        </activity>
+        <activity android:name=".activities.DriverArrivedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activities.PaymentSentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activities.TripEndDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <receiver android:name=".receivers.RouterReceiver" >
+            <intent-filter>
+                <action android:name="com.ibm.pickmeup.ROUTER" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
