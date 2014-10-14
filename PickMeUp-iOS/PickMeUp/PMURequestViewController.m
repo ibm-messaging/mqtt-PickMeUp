@@ -61,6 +61,11 @@
         locationManager = [[CLLocationManager alloc] init];
     
     locationManager.delegate = self;
+    
+    if(IS_OS_8_OR_LATER) {
+        [locationManager requestAlwaysAuthorization];
+    }
+    
     locationManager.pausesLocationUpdatesAutomatically = YES;
     locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
     
